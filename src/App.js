@@ -37,24 +37,25 @@ class App extends Component {
   }
 
   deleteTodo = (id) => {
-    this.state({
+    this.setState({
       todos: [...this.state.todos.filter(todo => todo.id !==id)]//: This uses Array.prototype.filter to create a new array that only includes todos where the id does not match the id that was passed as an argument to the function. This effectively removes the todo with the matching ID.
     //The spread operator (...) is used to create a new array. This is done to ensure that you're not modifying the original state directly.
     });
   }
 
-  render() {
-    return (
-      <div>
-      <Header />
-      <Todos
-      todos = {this.state.todos}
-      markComplete= {this.markComplete}
-      deleteTodo={this.deleteTodo}
-      />
-      <Footer />
-      </div>
-    );
-  }
+	render() {
+	  return (
+		<div>
+		  <Header />
+		  <Todos
+			todos={this.state.todos}
+			markComplete={this.markComplete}
+			deleteTodo={this.deleteTodo}
+		  />
+		  <Footer />
+		</div>
+	  );
+	}
+
 }
 export default App;
