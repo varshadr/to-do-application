@@ -1,18 +1,19 @@
 body {
+  background-color: rgb(245, 190, 230);
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
 .header {
-  background: #333;
+  background: rgb(218, 78, 164);
   color: #fff;
   text-align: center;
   padding: 10px;
 }
 
 .footer {
-  background: #333;
+  background: rgb(218, 78, 164);
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -22,7 +23,7 @@ body {
 }
 
 .todo-item {
-  background: #f4f4f4;
+  background: hwb(323 43% 0%);
   padding: 10px;
   border-bottom: 1px #ccc dotted;
   display: flex;
@@ -34,7 +35,7 @@ body {
 }
 
 .delete-btn {
-  background: #ff0000;
+  background: #cd18a6;
   color: #fff;
   border: none;
   padding: 5px 8px;
